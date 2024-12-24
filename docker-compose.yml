@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  service1:
+    build:
+      context: docker-compose
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+
+  service2:
+    build:
+      context: jwt-token
+      dockerfile: Dockerfile
+    ports:
+     - "5000:5000"
